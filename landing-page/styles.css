@@ -6,33 +6,41 @@
 - modificare wrap immagine donna
 - cambiare font family tutti font
 -  cambiare footer colore
+- hover button main ++++DONE
 */
 
 body{
     margin: 0px;
 }
-.container{
+.container-all{
     display: flex;
     flex-direction: column;
     background-color: #fefff0;
 
 
 }
+.container{
+    display:flex;
+}
 
 .top{
-    display: flex;
     justify-content: space-between;
     margin-left: 13%;
     margin-right: 14%;
     margin-top: 20px;
     align-items: center;
 }
-.top>div{
+.top>div,
+.supporto>a,
+.novità>a{
     color: #84cb34;
-    font-size: larger
-
+    font-size: large;
+    text-decoration: none;
 }
-
+.novità,
+.supporto{
+    justify-content: center;
+}
 .prodotti{
     display: inline-block;
     position: relative;
@@ -48,8 +56,10 @@ body{
     border: 0px;
     font-size: large;
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 4px;
+
 }
+
 
 
 
@@ -59,15 +69,19 @@ body{
     overflow: auto;
     background-color: #fefff0;
     border-radius: 5px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
 }
+
+
 .prodotti:hover .dropdown-prodotti{
     display: block;
     }
 
 .dropdown-prodotti a{
         display: block;
-        color: #000000;
-        padding: 5px;
         text-decoration: none;
         padding:20px 40px;
         color: #84cb34;
@@ -78,6 +92,8 @@ body{
         border-radius: 5px;
 
     }
+
+
 
 .top-left{
     display: flex;
@@ -90,17 +106,19 @@ body{
 }
 
 .main {
-    display: flex;
+    max-height: 700px;
+    flex-grow: 3;
     justify-content: space-between;
     align-items: center;
     margin: 3%;
-    margin-left: 13%;
-    margin-right: 13%;
+    margin-left: 7%;
+    margin-right: 7%;
     margin-top: 0%;
     background-color: #84cb34 ;
     padding: 3%;
     border-radius: 20px;
     border: 1px solid #8eda38;
+
 
 }
 
@@ -123,14 +141,15 @@ width: 100%;
 height: 100%;
 border-radius: 30px;
 }
-
+.free-space{
+    min-height: 2000px;
+}
 .footer{
-    position: fixed;
-    bottom: 0;
+
+    flex-grow: 0;
     width: 100%;
-    display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    flex-grow: 1;
     border-top: 1px solid rgba(0, 0, 0, 0.774);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -161,4 +180,8 @@ h2{
     background-color: yellow;
     font-weight:900;
     border: 3px solid black
+}
+
+.cta:hover{
+    background-color: rgba(255, 255, 0, 0.836);
 }
