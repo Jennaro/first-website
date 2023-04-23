@@ -1,0 +1,164 @@
+
+/*
+
+################## TODO ##################
+- cambiare ricerca in immagine lente
+- modificare wrap immagine donna
+- cambiare font family tutti font
+-  cambiare footer colore
+*/
+
+body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fefff0;
+
+
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 13%;
+    margin-right: 14%;
+    margin-top: 20px;
+    align-items: center;
+}
+.top>div{
+    color: #84cb34;
+    font-size: larger
+
+}
+
+.prodotti{
+    display: inline-block;
+    position: relative;
+}
+
+.prodotti-button:hover{
+    background-color: #fefff09f;
+}
+
+.prodotti-button{
+    background-color: #fefff0;
+    color: #84cb34;
+    border: 0px;
+    font-size: large;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+
+
+.dropdown-prodotti{
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: #fefff0;
+    border-radius: 5px;
+}
+.prodotti:hover .dropdown-prodotti{
+    display: block;
+    }
+
+.dropdown-prodotti a{
+        display: block;
+        color: #000000;
+        padding: 5px;
+        text-decoration: none;
+        padding:20px 40px;
+        color: #84cb34;
+    }
+
+.dropdown-prodotti a:hover{
+        background-color: #41413f9f;
+        border-radius: 5px;
+
+    }
+
+.top-left{
+    display: flex;
+
+
+}
+
+.top-left>div{
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-top: 0%;
+    background-color: #84cb34 ;
+    padding: 3%;
+    border-radius: 20px;
+    border: 1px solid #8eda38;
+
+}
+
+.box-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 4%;
+    align-items: left;
+
+
+}
+
+.box-right{
+    display: flex;
+    align-items: center;
+}
+.box-right>img{
+width: 100%;
+height: 100%;
+border-radius: 30px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.774);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: flex-end;
+    background-color: gray;
+}
+
+.footer>div{
+    color: black;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 48px;
+    color: #fefff0;
+    margin-bottom: 1%;
+}
+
+h2{
+    font-size: 24px;
+    color: #fefff0;
+}
+
+.cta{
+    border-radius: 40px;
+    padding: 10px;
+    max-width: fit-content;
+    background-color: yellow;
+    font-weight:900;
+    border: 3px solid black
+}
