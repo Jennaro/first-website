@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*HEADER*/
+
+.item-top{
+    justify-content: space-between;
+    margin-left: 13%;
+    margin-right: 14%;
+    margin-top: 20px;
+    align-items: center;
+}
+.item-top>div,
+.supporto>a,
+.novità>a{
+    color: #84cb34;
+    font-size: large;
+    text-decoration: none;
+}
+.novità,
+.supporto{
+    justify-content: center;
+}
+.prodotti{
+    display: inline-block;
+    position: relative;
+}
+
+.prodotti-button:hover{
+    background-color: #fefff09f;
+}
+
+.prodotti-button{
+    background-color: #fefff0;
+    color: #84cb34;
+    border: 0px;
+    font-size: large;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+}
+
+
+
+
+.dropdown-prodotti{
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color: #fefff0;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+
+.prodotti:hover .dropdown-prodotti{
+    display: block;
+    }
+
+.dropdown-prodotti a{
+        display: block;
+        text-decoration: none;
+        padding:20px 40px;
+        color: #84cb34;
+    }
+
+.dropdown-prodotti a:hover{
+        background-color: #41413f9f;
+        border-radius: 5px;
+
+    }
+
+
+
+.top-left{
+    display: flex;
+
+
+}
+
+.top-left>div{
+    padding: 20px;
+}
+
+/*   MAIN   */
+
+.item-main{
+    flex-direction: column;
+    background-color: #84cb34;
+    border: 2px solid red;
+    max-width: 80%;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.text {
+   padding: 3%;
+   color: white;
+   font-size: 35px;
+}
+
+
+.item-footer{
+
+    flex-grow: 0;
+    width: 100%;
+    justify-content: space-around;
+    flex-grow: 1;
+    border-top: 1px solid rgba(0, 0, 0, 0.774);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: flex-end;
+    background-color: gray;
+}
+
+.item-footer>div{
+    color: black;
+    font-weight: 600;
+}
