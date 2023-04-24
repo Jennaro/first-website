@@ -100,7 +100,7 @@ body{
 .item-main{
     flex-direction: column;
     background-color: #84cb34;
-    border: 2px solid red;
+
     max-width: 80%;
     align-items: center;
     border-radius: 20px;
@@ -112,7 +112,55 @@ body{
    font-size: 35px;
 }
 
+/*EXTRA*/
 
+
+
+
+/*FORM*/
+.item.form{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60%;
+    margin-bottom: 20px;
+
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+
+}
+
+fieldset{
+    border: none;
+}
+legend,
+fieldset>div{
+    color: #fefff0;
+}
+
+select,
+input,
+textarea{
+    background-color: yellow;
+}
+
+button{
+    border-radius: 5px;
+    border:4px solid black;
+    color: black;
+    font-weight: bolder;
+    background-color: yellow;
+}
+
+/*EXTRA*/
+.item.extra{
+    height: 200px;
+    padding: 150px;
+}
+
+/* footer */
 .item-footer{
 
     flex-grow: 0;
